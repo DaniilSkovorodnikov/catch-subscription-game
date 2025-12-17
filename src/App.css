@@ -1,0 +1,65 @@
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game {
+  height: 100%;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catch-button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.level-switch {
+  display: flex;
+}
+
+.level-switch button {
+  background-color: transparent;
+  width: max-content;
+  border: none;
+  border-radius: 0;
+  transition: opacity 0.1s;
+}
+
+.level-switch button:hover {
+  opacity: 0.6;
+}
+
+.level-switch button.active {
+  border-bottom: 1px solid gray;
+}
+
+.level-switch button:focus {
+  outline: none;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hint {
+  width: 100%;
+  text-align: center;
+  font-size: 128px;
+  transition: opacity 2s;
+}

@@ -18,10 +18,10 @@ export default function Game({finishGame}) {
 
   const handleStartEasyLevel = () => {
     setEasyHintVisible(false)
-    setLevel(null);
     if(easyLevelWon) {
         return;
     }
+    setLevel(null);
     if(levelBtnPicked) {
         setLevel('easy')
         return;
